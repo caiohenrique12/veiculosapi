@@ -1,4 +1,4 @@
-# API de carros
+# API de veículos
 
 Esse repositório apresenta código de uma api de veiculos.
 
