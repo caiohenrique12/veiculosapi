@@ -12,11 +12,11 @@ Esse repositório apresenta código de uma api de veiculos.
 
 1. Faça o clone desse projeto:
 ```bash
-git clone
+git clone git@github.com:caiohenrique12/veiculosapi.git
 ```
 2. No diretório do projeto:
 ```bash
-cd 
+cd veiculosapi
 ```
 3. Rode o bundle para instalar as gems:
 ```bash
@@ -26,7 +26,7 @@ ou
 ```bash
 bundle install
 ```
-4. Crie o banco de dados, migração e seed:
+4. Crie o banco de dados, migration e seed:
 ```bash
 rails db:create db:migrate db:seed
 ```
