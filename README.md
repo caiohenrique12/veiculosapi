@@ -54,7 +54,8 @@ Os *endpoints* desta API estão documentados abaixo.
 ## Listar todos os veículos
 
 **URL**
-/veiculos
+
+* /veiculos
 
 **Método HTTP:**
 
