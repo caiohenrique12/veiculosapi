@@ -77,7 +77,7 @@ Conteúdo de retorno: JSON com veiculos
 
 **URL**
 
-* /contacts/:id
+* /veiculos/:id
 
 **Método HTTP:**
 
