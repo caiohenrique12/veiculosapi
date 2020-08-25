@@ -31,6 +31,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 4.0.0'
   gem 'factory_bot_rails'
   gem 'faker'
+  gem 'ffaker'
   gem "better_errors"
   gem "binding_of_caller"
 end

@@ -32,6 +32,10 @@ class Api::V1::VeiculosController < Api::V1::ApiController
     render json: {status: 'SUCCESS', message:'Veiculo deletado com sucesso'}, status: 204
   end
 
+  def idade_media
+    @veiculo = Veiculo.idade_media(params[:marca])
+  end
+
   private
 
     def set_veiculo

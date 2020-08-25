@@ -10,10 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_02_194834) do
+ActiveRecord::Schema.define(version: 2020_08_25_221608) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "donos", force: :cascade do |t|
+    t.string "nome"
+    t.date "data_nascimento"
+    t.date "data_compra"
+    t.date "data_venda"
+    t.bigint "veiculo_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["veiculo_id"], name: "index_donos_on_veiculo_id"
+  end
 
   create_table "veiculos", force: :cascade do |t|
     t.string "marca"
@@ -25,4 +36,5 @@ ActiveRecord::Schema.define(version: 2020_08_02_194834) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "donos", "veiculos"
 end

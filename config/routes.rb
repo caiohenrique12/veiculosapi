@@ -3,7 +3,10 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :veiculos
+      get 'veiculos/:marca/idade_media', to: 'veiculos#idade_media'
+      resources :veiculos do
+        resources :donos, only: [:create]
+      end
     end
   end
 end
